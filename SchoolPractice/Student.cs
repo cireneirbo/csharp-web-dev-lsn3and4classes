@@ -7,9 +7,18 @@ namespace SchoolPractice
 {
     public class Student
     {
-        private string Name;
+        private string Name { get, set};
         private int StudentId;
         private int NumberOfCredits;
         private double Gpa;
+
+        public Student(string Name, int StudentId, int NumberOfCredits, double Gpa)
+        {
+            this.Name = Name;
+            this.StudentId = StudentId;
+            this.NumberOfCredits = NumberOfCredits;
+            this.Gpa = Gpa;
+        }
+
     }
 }
